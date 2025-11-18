@@ -4,21 +4,15 @@ import dotenv from "dotenv"
 dotenv.config()
 
 const port = process.env.PORT || 3000
-const nome: String = "Enzo pai"
-const idade: Number = 15
 
-const server = http.createServer((req, res) => {
-    req.statusCode = 200
-    res.setHeader("Content-Type", "text/plain")
-    res.end(`Servidor enviado para ${nome}, idade ${idade}!`)
+const server  = http.createServer((req, res) => {
+    res.writeHead(200, {"content-type": "text/plain; charset: utf-8"})
+
+    res.end(`Servidor rodando para John, idade 34!`)
 })
 
 server.listen(port, () => {
-    console.log(`Servidor funcionando em http://localhost:${port}`)
-})
-
-server.close(() => {
-    console.log("Servidor encerrado.")
+    console.log(`Servidor rodando em: http://localhost:${port}/`)
 })
 
 export default server
