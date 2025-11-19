@@ -12,6 +12,8 @@ const port = process.env.PORT || 3000
 
 server.use(helmet())
 
+server.use(express.json())
+
 server.use(express.urlencoded({ extended: true }))
 
 server.use(express.static(path.join(__dirname, "..", "public")))

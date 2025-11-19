@@ -24,13 +24,23 @@ produtosRota.get("/:id", (req, res) => {
 })
 
 produtosRota.post("/", (req, res) => {
-    const novoProduto = req.body
+    const {id, nome, preco} = req.body
 
-    if (!novoProduto && !novoProduto.id && !novoProduto.nome && !novoProduto.preco) {
-        return res.status(400).json({ error: 'Dados do produto inválidos' })
-    } else {
-        return res.status(201).json(novoProduto)
+    if (typeof id !== "number" || !nome || typeof preco !== "number") {
+        return res.status(400).json({ message: "Erro ao criar produto"})
     }
+
+    const existsCondition = produtos.some(product => product.id === id)
+
+    if (existsCondition) {
+        return res.status(409).json({ message: "Produto já existe" })
+    }
+
+    const novoProduto = {id, nome, preco}
+
+    produtos.push(novoProduto)
+
+    return res.status(200).json(novoProduto)
 })
 
 export default produtosRota
