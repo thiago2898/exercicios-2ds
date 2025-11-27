@@ -23,9 +23,7 @@ server.use("/", rotas)
 
 server.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}/`)
-})
-
-server.close(() => {
+}).close(() => {
   console.log("Servidor encerrado.")
 })
 
