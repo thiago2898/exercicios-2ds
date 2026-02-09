@@ -1,0 +1,3 @@
+1. Teste unitário.
+2. Teste de integração.
+3. Orientar o desenvolvimento por meio de testes a fim de seguir uma sequência definida com precisão.
