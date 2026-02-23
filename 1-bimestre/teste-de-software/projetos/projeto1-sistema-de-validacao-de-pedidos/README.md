@@ -49,6 +49,12 @@ A função deve retornar:
 
 `false` // se o pedido for inválido
 
+# **📋 TESTES SOLICITADOS**
+- Pedido válido deve retornar true
+- Pedido com total 0 deve retornar false
+- Pedido sem cliente deve retornar false
+- Pedido sem itens deve retornar false
+
 # **📦  ESTRUTURA ESPERADA**
 
 Exemplo de pedido válido:
@@ -57,7 +63,7 @@ Exemplo de pedido válido:
 {
 	cliente: "Carlos",
 	total: 150,
-	itens: ["Produto A", "Produto B"]
+	itens: ["Produto A"],
 }
 ```
 
