@@ -1,13 +1,17 @@
 function validarPedido(pedido) {
-    let valid = false
-
-    if (pedido.cliente && pedido.total > 0 && pedido.itens) {
-        valid = true
-    } else {
-        valid = false
+    if (!pedido.cliente) {
+        return false
     }
 
-    return {valid, pedido}
+    if (pedido.total <= 0) {
+        return false
+    }
+
+    if (!pedido.itens || pedido.itens.length === 0) {
+        return false
+    }
+
+    return true
 }
 
 module.exports = validarPedido
