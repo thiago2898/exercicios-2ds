@@ -31,7 +31,13 @@ Prazo de Entrega 1: 17-mai (5 pt) | Prazo de Entrega 2: 20-mai (3 pt)
 
 #### | CONTEÚDOS PARA A PROVA
 ```
--
+O QUE É CI/CD E COMO O CÓDIGO VAI DO COMPUTADOR ATÉ A PRODUÇÃO
+GIT FLOW, ESTRATÉGIAS DE BRANCH, PULL REQUESTS E CODE REVIEWS NO FLUXO DE CI
+O QUE É UM PIPELINE E COMO ELE FUNCIONA
+INTRODUÇÃO AO GITHUB ACTIONS, CRIANDO PRIMEIRO WORKFLOW E FAZENDO BUILD DA APLICAÇÃO NO PIPELINE
+VARIÁVEIS DE AMBIENTE, SECRETS NO PIPELINE, RODANDO FILTROS E TRIGGERS
+CD: ENTREGA CONTINUA VS DEPLOY CONTINUO, QUAL A DIFERENÇA
+FAZENDO DEPLOY AUTOMATICO
 ```
 
 ### Gestão de Startup III
@@ -46,7 +52,8 @@ Prazo de Entrega 1: 15-mai (5 pt) | Prazo de Entrega 2: não há
 
 #### | CONTEÚDOS PARA A PROVA
 ```
--
+O QUE BRANDING E NAMING DO PRODUTO
+VISÃO DE PRODUTO: BUSINESS MODEL CANVAS SIMPLIFICADO
 ```
 
 OBS: É necessário que todos os exercícios estejam concluídos até um dia antes da apresentação do projeto pessoal. Caso o aluno não tenha completado os exercícios, terá -3 pontos na nota Qualitativa.
